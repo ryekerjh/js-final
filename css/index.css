@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+  font-weight: bold;
+}
+.header {
+    background-color: #e95100;
+    padding: 30px 40px;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input {
+    border: none;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #000;
+    color: #e95100;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background-color: #e95100;
+    font-size: 25px;
+    transition: 0.2s;
+    list-style-type: none;
+    color: #000;
+    font-weight: bold;
+}
+
+ul li:nth-child(odd) {
+    background-color: #000;
+    color: #e95100;
+}
+
+ul li:hover {
+  background-color: #820000;
+  color: #000;
+}
+
+ul li.checked {
+    background: #820000;
+    color: #000;
+    text-decoration: line-through;
+}

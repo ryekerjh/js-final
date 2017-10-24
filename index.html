@@ -9,29 +9,22 @@
   <link rel="stylesheet" href="css/index.css">
   <title>To-Do List</title>
 </head>
-<body>
-  <div class="col-sm-2 col-sm-offset-5">
-  <form onsubmit="submitForm()" name="tasks" method="post">
-    <legend>To-Do List</legend>
-    Task:<br>
-    <input type="text" name="event" value="To-Do" id="event"><br>
-    Date:<br>
-    <input type="date" name="date" value="00/00" id="date"><br>
-    Time:<br>
-    <input type="time" name="time" value="12:00" id="time"><br>
-    <input type="submit" value="Add To-Do" onclick='addToList(); return false'>
-  </form>
-  </div>
-  <ul id="list">
-  </ul>
+<div class="col-sm-6 col-sm-offset-3">
+<div id="myDIV" class="header">
+  <h2>Things That Need Doing</h2>
+  <input type="text" id="myInput" placeholder="Add To-Do">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
 
-
-
-
-
-
-
-
+<ul id="myUL" class="text-center">
+  <li>go to work</li>
+  <li class="checked">put in for vacation days</li>
+  <li>play video games</li>
+  <li>play video games</li>
+  <li>play video games</li>
+  <li>work on coding</li>
+</ul>
+</div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
