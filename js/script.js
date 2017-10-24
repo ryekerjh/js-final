@@ -1,5 +1,9 @@
-function addToList(){
-  var add = document.createElement('li');
-  var listEvent = document.getElementById('list').innerHTML = document.tasks.event.value;
-  var listDate = document.getElementById('list').innerHTML = document.tasks.date.value;
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  document.getElementById("myUL").appendChild(li);
 }
+
+list.addEventListener('onClick', classList.add = 'checked');
